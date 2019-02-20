@@ -59,6 +59,7 @@ export function buildSpecFromUpdate<T extends MosaicKey>(mosaicUpdate: MosaicUpd
 export function updateTree<T extends MosaicKey>(root: MosaicNode<T>, updates: MosaicUpdate<T>[]) {
   let currentNode = root;
   updates.forEach((mUpdate: MosaicUpdate<T>) => {
+    // @ts-ignore
     currentNode = update(currentNode, buildSpecFromUpdate(mUpdate));
   });
 

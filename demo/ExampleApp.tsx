@@ -99,7 +99,7 @@ export class ExampleApp extends React.PureComponent<{}, ExampleAppState> {
               renderToolbar={count === 2 ? () => <div>My Custom Toolbar</div> : null}
             >
               <div className="example-window">
-                <h1>{`Window ${count}`}</h1>
+                <h1>{`Window ${count} 1111`}</h1>
               </div>
             </NumberMosaicWindow>
           )}
